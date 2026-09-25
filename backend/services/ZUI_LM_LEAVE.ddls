@@ -1,0 +1,4 @@
+@EndUserText.label: 'Leave Management UI Service'
+define service ZUI_LM_LEAVE {
+  expose ZC_LM_LEAVE_REQ as LeaveRequests;
+}

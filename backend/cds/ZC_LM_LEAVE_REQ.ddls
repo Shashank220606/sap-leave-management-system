@@ -1,0 +1,17 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Leave Request UI View'
+@Metadata.allowExtensions: true
+define root view entity ZC_LM_LEAVE_REQ
+  as select from zlm_leave_req
+{
+  key request_id      as RequestId,
+      emp_id           as EmpId,
+      leave_type       as LeaveType,
+      from_date       as FromDate,
+      to_date         as ToDate,
+      no_of_days      as NoOfDays,
+      reason           as Reason,
+      status           as Status,
+      manager_id       as ManagerId,
+      balance_updated as BalanceUpdated
+}

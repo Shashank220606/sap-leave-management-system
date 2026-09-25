@@ -1,0 +1,21 @@
+@EndUserText.label : 'Leave Request'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+@AbapCatalog.primaryKey.invertedIndividualIndex : true
+define table zlm_leave_req {
+
+  key client          : abap.clnt not null;
+  key request_id      : abap.char(10) not null;
+      emp_id          : abap.char(10);
+      leave_type      : abap.char(5);
+      from_date       : abap.dats;
+      to_date         : abap.dats;
+      no_of_days      : abap.int4;
+      reason          : abap.char(100);
+      status          : abap.char(15);
+      manager_id      : abap.char(10);
+      balance_updated : abap.char(1);
+
+}

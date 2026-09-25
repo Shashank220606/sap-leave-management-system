@@ -1,0 +1,17 @@
+@EndUserText.label : 'Leave Management Employee Master'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+@AbapCatalog.primaryKey.invertedIndividualIndex : true
+define table zlm_employee {
+
+  key client      : abap.clnt not null;
+  key emp_id      : abap.char(10) not null;
+      emp_name    : abap.char(60);
+      department  : abap.char(40);
+      designation : abap.char(40);
+      email       : abap.char(80);
+      join_date   : abap.dats;
+
+}

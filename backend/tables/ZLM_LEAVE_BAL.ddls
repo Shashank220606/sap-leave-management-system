@@ -1,0 +1,15 @@
+@EndUserText.label : 'Leave Balance'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+@AbapCatalog.primaryKey.invertedIndividualIndex : true
+define table zlm_leave_bal {
+
+  key client : abap.clnt not null;
+  key emp_id : abap.char(10) not null;
+      cl_bal  : abap.int4;
+      sl_bal  : abap.int4;
+      el_bal  : abap.int4;
+
+}

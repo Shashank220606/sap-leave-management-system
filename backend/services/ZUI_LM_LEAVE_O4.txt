@@ -1,0 +1,23 @@
+SAP Leave Management - OData V4 Service Binding
+
+Service Binding:
+ZUI_LM_LEAVE_O4
+
+Binding Type:
+OData V4 - UI
+
+Service Definition:
+ZUI_LM_LEAVE
+
+Entity Set:
+LeaveRequests
+
+CDS View:
+ZC_LM_LEAVE_REQ
+
+Purpose:
+Exposes leave request information through an OData V4 service
+for application and integration purposes.
+
+Status:
+Published in SAP ABAP Cloud.

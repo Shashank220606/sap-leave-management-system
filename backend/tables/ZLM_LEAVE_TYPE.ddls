@@ -1,0 +1,14 @@
+@EndUserText.label : 'Leave Type Master'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+@AbapCatalog.primaryKey.invertedIndividualIndex : true
+define table zlm_leave_type {
+
+  key client       : abap.clnt not null;
+  key leave_type   : abap.char(5) not null;
+      leave_name   : abap.char(40);
+      allowed_days : abap.int4;
+
+}
