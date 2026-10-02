@@ -361,6 +361,51 @@ This project demonstrates practical SAP ABAP Cloud thinking, including core ente
 
 It is strongest as a backend-first business process project, with the front-end treated as a separate demonstration layer rather than a production SAP application.
 
+## Run the project locally
+
+Follow these steps from a terminal. You need **Node.js and npm** for the React prototype. The SAP ABAP backend artifacts require an SAP ABAP Cloud environment with the appropriate development tools; they do not run locally using the frontend commands below.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Shashank220606/sap-leave-management-system.git
+cd sap-leave-management-system
+```
+
+### 2. Run the frontend prototype
+
+```bash
+cd frontend
+npm install
+```
+
+If the project has a `dev` script in `frontend/package.json`, start Vite with:
+
+```bash
+npm run dev
+```
+
+Open the local URL printed in the terminal (Vite commonly uses `http://localhost:5173`).
+
+### 3. Run the Express demo server (if needed)
+
+Open a **second terminal**:
+
+```bash
+cd sap-leave-management-system/frontend
+npm install
+npm run
+```
+
+The final command lists the scripts actually defined in `package.json`. Run the server using the script shown there (for example, `npm run server` only if that script exists). Check `frontend/README.md` for any required environment variables and setup notes.
+
+### Important notes
+
+- Run `npm run` inside `frontend/` to see the available npm scripts before starting the app.
+- Configure local environment values using `.env.example` if required. Never commit real API keys, passwords, tokens, or SAP credentials.
+- The React UI is a **separate prototype using mock data**; it is not currently connected to the SAP backend as a production application.
+- To execute the ABAP classes, CDS objects, and OData service, import/create the artifacts in a configured SAP ABAP Cloud system using ABAP Development Tools (ADT). The local npm commands do not start an SAP system.
+
 ## How to use this repository
 
 1. Review the ABAP tables in `backend/tables/`.
