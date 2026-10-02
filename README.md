@@ -1,5 +1,23 @@
 # SAP Leave Management System
 
+## 🛠️ Tech Stack
+
+<p align="left">
+  <img src="https://img.shields.io/badge/SAP%20ABAP%20Cloud-0FA6D8?style=for-the-badge&logo=sap&logoColor=white" alt="SAP ABAP Cloud" />
+  <img src="https://img.shields.io/badge/SAP%20BTP-0FA6D8?style=for-the-badge&logo=sap&logoColor=white" alt="SAP BTP" />
+  <img src="https://img.shields.io/badge/CDS%20Views-1676D2?style=for-the-badge&logo=sap&logoColor=white" alt="CDS Views" />
+  <img src="https://img.shields.io/badge/OData%20V4-1676D2?style=for-the-badge&logo=odata&logoColor=white" alt="OData V4" />
+  <img src="https://img.shields.io/badge/ABAP%20ADT-0FA6D8?style=for-the-badge&logo=sap&logoColor=white" alt="ABAP Development Tools" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+</p>
+
+> **Architecture note:** SAP ABAP Cloud, CDS, and OData represent the backend/service design. React, Vite, JavaScript, and Express belong to the separate frontend prototype/integration stub; the prototype is not currently production-integrated with SAP.
+
+
+
 A recruiter-ready SAP ABAP Cloud project for employee leave management, focused on the backend business flow, validation logic, and OData exposure. The repository demonstrates a leave approval lifecycle from request creation through validation, manager decision, balance reconciliation, and reporting.
 
 The React application is a separate frontend prototype using mock data for demonstration purposes. It is not integrated as a production SAP frontend and should be treated as a UI showcase rather than a production SAP application.
